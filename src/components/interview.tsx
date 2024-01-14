@@ -64,7 +64,7 @@ export const Interview = component$((props: any) => {
   });
 
   const generateServerSideAudio = server$(async function* (message: string, email: string) {
-    const response = await fetch(`${process.env.API_URL}/api/ai/generate-audio?email=${email}`, {
+    const response = await fetch(`${process.env.VITE_API_URL}/api/ai/generate-audio?email=${email}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -167,7 +167,7 @@ export const Interview = component$((props: any) => {
     const messageStructure = `Conversation History: ${conversationHistory}. \n User:${isCoding.value ? "\n question:" + newMessage + "code:" + store.code : newMessage}`;
     isAwaitingMessageResponse.value = true;
     const email = session.value?.user?.email;
-    const response = fetch(`${process.env.API_URL}/api/ai/message?email=${email}`, {
+    const response = fetch(`${process.env.VITE_API_URL}/api/ai/message?email=${email}`, {
       method: "POST",
       headers: {
         "x-api-key": process.env.API_KEY ?? "",

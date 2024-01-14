@@ -27,7 +27,7 @@ export default component$(() => {
   const getUserSettings = server$(async () => {
     console.log("Getting user settings");
     try {
-      const response = await fetch(`${process.env.API_URL}/api/users?email=${session.value?.user?.email}`, {
+      const response = await fetch(`${process.env.VITE_API_URL}/api/users?email=${session.value?.user?.email}`, {
         headers: {
           "x-api-key": process.env.API_KEY ?? "",
         },

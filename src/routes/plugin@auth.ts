@@ -9,7 +9,7 @@ export const { onRequest, useAuthSession, useAuthSignin, useAuthSignout } = serv
     signIn: async ({ account }: any) => {
       console.log("sign in", account);
       try {
-        await fetch(`${process.env.API_URL}/api/auth/callback`, { headers: { Authorization: account.id_token, "x-api-key": env.get("API_KEY") ?? "" } });
+        await fetch(`${process.env.VITE_API_URL}/api/auth/callback`, { headers: { Authorization: account.id_token, "x-api-key": env.get("API_KEY") ?? "" } });
       } catch (e) {
         console.error(e);
         return false;
