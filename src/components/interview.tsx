@@ -262,7 +262,7 @@ export const Interview = component$((props: any) => {
   });
 
   const generateKata = $(() => {
-    const newQuestion = ALGO_KATAS[0];
+    const newQuestion = ALGO_KATAS[Math.floor(Math.random() * ALGO_KATAS.length)];
     console.log(newQuestion);
     messages.value = [
       {
