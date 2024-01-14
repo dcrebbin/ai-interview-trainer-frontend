@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "up-it-aps",
+  "short_name": "UP IT APS",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "AI powered learning platform for the APS"
+}
