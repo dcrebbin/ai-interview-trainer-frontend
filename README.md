@@ -8,6 +8,8 @@ However it has recently been pivoted towards tech specific coding interviews
 
 **DEMO:** https://www.youtube.com/watch?v=ef2ivitjiBU
 
+*Backend:* https://github.com/dcrebbin/ai-interview-trainer-backend
+
 ### Technology:
 
 - Frontend: [Qwik](https://qwik.builder.io/)
