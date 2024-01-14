@@ -2,10 +2,9 @@ import { component$, useStore } from "@builder.io/qwik";
 import { server$ } from "@builder.io/qwik-city";
 
 const serverGreeter = server$(async () => {
-  const API_URL = process.env.API_URL;
   let serverResponse = "";
   try {
-    await fetch(`${API_URL}/`, {
+    await fetch(`${process.env.VITE_API_URL}/`, {
       credentials: "include",
       headers: {
         "x-api-key": process.env.API_KEY ?? "",

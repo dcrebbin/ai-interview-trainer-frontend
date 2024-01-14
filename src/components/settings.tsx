@@ -20,7 +20,7 @@ export const SettingsDialog = component$((props: any) => {
     console.log("Updating user settings");
     try {
       const response = await fetch(
-        `${process.env.API_URL}/api/users/settings?email=${session.value?.user?.email}`,
+        `${process.env.VITE_API_URL}/api/users/settings?email=${session.value?.user?.email}`,
         {
           method: "POST",
           body: JSON.stringify({
