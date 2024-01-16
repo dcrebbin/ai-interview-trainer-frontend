@@ -1,4 +1,6 @@
-# Up It APS
+# AI Interview Trainer - Frontend
+
+## Using Qwik with Tailwind
 
 Up It APS is an AI powered interview trainer for the Australian Public Service.
 
