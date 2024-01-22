@@ -2,8 +2,6 @@ import type { QwikIntrinsicElements } from "@builder.io/qwik";
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import {
-  useAuthSignout,
-  useAuthSignin,
   useAuthSession,
 } from "~/routes/plugin@auth";
 import { ServerStatusButton } from "./debug/server-status-button";
@@ -33,8 +31,6 @@ export function HeroiconsArrowRightOnRectangleSolid(
 
 export const AppBar = component$((props: any) => {
   const session = useAuthSession();
-  const signIn = useAuthSignin();
-  const signOut = useAuthSignout();
 
   const isLoggedIn = session.value?.user !== undefined;
   const retrieveFirstName = () => {
@@ -90,15 +86,6 @@ export const AppBar = component$((props: any) => {
                 }}
               >
                 settings
-              </button>
-              <button
-                class="text-2xl px-4 bg-black text-white rounded-xl flex items-center"
-                onClick$={async () => {
-                  signOut.submit({});
-                }}
-              >
-                logout
-                <HeroiconsArrowRightOnRectangleSolid></HeroiconsArrowRightOnRectangleSolid>
               </button>
             </div>
           ) : (
