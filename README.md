@@ -1,10 +1,6 @@
-# Up It APS
+# Up It Quest
 
-Up It APS is an AI powered interview trainer for the Australian Public Service.
-
-https://www.upitaps.com.au **(Closed ALPHA)**
-
-However it has recently been pivoted towards tech specific coding interviews
+Up It Quest is an AI powered interview trainer for technical interviews
 
 **DEMO:** https://www.youtube.com/watch?v=ef2ivitjiBU
 
