@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="logo" transform="matrix(0.71487,0,0,0.71487,-376.542,-227.336)">
+    <g id="logo" transform="matrix(0.71487,0,0,0.71487,-376.542,-234.73)">
         <g transform="matrix(0.842264,0,0,0.842264,182.701,178.66)">
             <g>
                 <path d="M511.908,281.022L538.216,307.038L511.259,311.127L511.908,281.022Z" style="fill:rgb(201,93,93);"/>
@@ -44,8 +44,8 @@
                 <text x="1276.53px" y="477.276px" style="font-family:'Versa-Versa', 'Versa';font-size:364.297px;fill:rgb(255,238,103);">IT</text>
             </g>
         </g>
-        <g transform="matrix(0.591835,0,0,0.591835,393.521,496.299)">
-            <text x="603.254px" y="703.733px" style="font-family:'Socake';font-size:364.297px;fill:rgb(86,141,211);">aps</text>
+        <g transform="matrix(0.591835,0,0,0.591835,261.968,545.751)">
+            <text x="603.254px" y="703.733px" style="font-family:'Socake';font-size:364.297px;fill:rgb(86,141,211);">quest!</text>
         </g>
     </g>
 </svg>
