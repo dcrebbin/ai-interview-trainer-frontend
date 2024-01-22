@@ -79,11 +79,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "UP IT aps!",
+  title: "Up It Quest!",
   meta: [
     {
       name: "description",
-      content: "AI powered learning platform for the APS",
+      content: "Open Source AI powered learning platform for technical interviews",
     },
   ],
 };
