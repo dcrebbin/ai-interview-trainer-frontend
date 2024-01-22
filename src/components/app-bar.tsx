@@ -47,9 +47,9 @@ export const AppBar = component$((props: any) => {
       style={{ "--tw-bg-opacity": props.tataKaiMode ? "0.4" : "1" }}
     >
       <Image
-        src="/images/up-it-aps-logo.svg"
-        width={100}
-        height={100}
+        src="/images/up-it-quest-logo.svg"
+        width={80}
+        height={80}
         class="m-4 p-2"
         alt="A lovely bath"
       />
@@ -102,14 +102,7 @@ export const AppBar = component$((props: any) => {
               </button>
             </div>
           ) : (
-            <button
-              class="text-2xl px-4 hover:drop-shadow-md bg-black text-white rounded-xl "
-              onClick$={() => {
-                signIn.submit({});
-              }}
-            >
-              login
-            </button>
+            <div></div>
           )}
         </div>
       </div>
