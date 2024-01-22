@@ -1,6 +1,5 @@
-import { component$, useSignal, useVisibleTask$, $, type QwikIntrinsicElements, useStore } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$, type QwikIntrinsicElements } from "@builder.io/qwik";
 import { isServer } from "@builder.io/qwik/build";
-import { useAuthSignin } from "~/routes/plugin@auth";
 
 export function HeroiconsChatBubbleLeftSolid(props: QwikIntrinsicElements["svg"], key: string) {
   return (
@@ -26,11 +25,9 @@ export function HeroiconsPlaySolid(props: QwikIntrinsicElements["svg"], key: str
   );
 }
 export const Promotional = component$(() => {
-  const signIn = useAuthSignin();
   const emojiTalkingSpeed = 200;
   const isEmojiTalking = useSignal(false);
   const isAudioPlaying = useSignal(false);
-  const store: any = useStore({ audio: null });
   useVisibleTask$(async ({ track }) => {
     track(() => isAudioPlaying.value);
 
@@ -45,23 +42,6 @@ export const Promotional = component$(() => {
     }, emojiTalkingSpeed);
 
     return () => clearInterval(interval);
-  });
-
-  const playAudioFromUrl = $((url: string) => {
-    const audio = new Audio(url);
-    store.audio = audio;
-    audio.onended = () => {
-      isAudioPlaying.value = false;
-      isEmojiTalking.value = false;
-    };
-    audio.play();
-  });
-
-  const stopAudio = $(() => {
-    store.audio.pause();
-    store.audio.currentTime = 0;
-    isAudioPlaying.value = false;
-    isEmojiTalking.value = false;
   });
 
   return (
