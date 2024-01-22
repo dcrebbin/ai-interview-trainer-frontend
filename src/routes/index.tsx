@@ -61,7 +61,7 @@ export default component$(() => {
 
   return (
     <div class="w-full h-full flex flex-col justify-start items-start ">
-      <div class="bg-[url(/images/up-it-aps-background.svg)] bg-no-repeat bg-cover w-full h-full absolute z-0"></div>
+      <div class="bg-[url(/images/up-it-quest-background.svg)] bg-no-repeat bg-cover w-full h-full absolute z-0"></div>
       <AppBar updateTatakaiMode={updateTatakaiMode} tataKaiMode={tataKaiMode.value} settingsOpen={settingsOpen}></AppBar>
       {tataKaiMode.value ? <iframe ref={video} width="100%" height="100%" class="z-10 absolute" src="https://www.youtube.com/embed/vTfCN3AwHOc?autoplay=1&start=40" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay;time; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> : null}
       <div class="w-full h-full bottom-0 items-end z-10">
